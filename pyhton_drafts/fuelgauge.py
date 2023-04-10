@@ -1,9 +1,7 @@
 while True:
- 
-    fuel = (input("Fraction: "))
+    fuel = input("Fraction: ")
     try:
-       
-        numerator,denominator = fuel.split("/")
+        numerator, denominator = fuel.split("/")
 
         new_n = int(numerator)
         new_d = int(denominator)
@@ -12,8 +10,8 @@ while True:
 
         if f <= 1:
             break
-    except(ValueError,ZeroDivisionError):
-            pass
+    except (ValueError, ZeroDivisionError):
+        pass
 
 p = f * 100
 
